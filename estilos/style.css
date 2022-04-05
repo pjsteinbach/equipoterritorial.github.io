@@ -1,0 +1,201 @@
+:root{
+    --primary-font: 'Oswald', sans-serif;
+    --secondary-font: 'Source Sans Pro', sans-serif;
+    --primary-color: #22514c;
+    --secondary-color: #8bb2a2;
+    --tertiary-color: #d23f24;
+    --font-color: #f6cbbc;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+}
+
+header nav ul li{
+    list-style: none;
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 36px;
+    position: relative;
+    width: 130px;
+    text-align: center;
+    border-right: solid 1px var(--font-color);
+}
+
+header nav ul li:hover{
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+
+}
+
+header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.nav-list_rtd__items{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-list_supervision__items li:hover > a, .nav-list_rtd__items li:hover > a {
+
+    color: var(--font-color);
+}
+
+.logo{
+    padding-left: 12px;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+}
+
+.nav-list_supervision__items, .nav-list_rtd__items{
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    transform: translateX(-52px);
+}
+
+.nav-list_supervision__items a, .nav-list_rtd__items a{
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    color: var(--primary-color);   
+    width: 100%;
+    line-height: 4rem;
+}
+
+.nav-list_supervision__items > li, .nav-list_rtd__items > li{
+    border-bottom: solid 1px var(--primary-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    width: 130px;
+    transform: translateY(-20px);
+}
+
+
+
+/*main*/
+
+.container-upper{
+    background-image: url(../asset/img/fondo-byn.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 50vh;
+}
+
+.container-upper h1{
+    margin: 0;
+    padding-top: 100px;
+    font-family: var(--primary-font);
+    font-size: 4.7rem;
+    color: var(--font-color);
+    text-shadow: 0 0 8px rgba(0,0,0,.4);
+}
+
+.container-upper p{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    background-color: var(--font-color);
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.container-middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 36px auto;
+    height: 480px;
+    text-align: center;
+}
+
+.grid-container-left, .grid-container-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 2px var(--font-color);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 8px;
+    height: 80%;
+}
+
+.container-middle_left__subtitulo{
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 400s;
+    line-height: 2rem;
+    color: var(--primary-color);
+    background-color: var(--font-color);
+    margin: 8px;
+    border-radius: 4px;
+
+}
+
+.grid-container-left div, .grid-container-right div{
+    background-color: var(--primary-color);
+    margin: 4px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-weight: 500;
+    color: var(--font-color);
+    transition: all .3s ease;
+}
+
+.grid-container-left div:hover, .grid-container-right div:hover{
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+section div div a, section div div p{
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--font-color);   
+    width: 100%;
+    line-height: 4rem;
+}
+
+.grid-container-left .container-middle_left__parte .menu-ps, .grid-container-left .container-middle_left__dym .menu-dym{
+    display: none;
+}
+
+/*footer*/
+footer{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-family: var(--secondary-font);
+    font-size: .7rem;
+    font-weight: 200;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+}
+
+footer p{
+    margin: 0;
+}
