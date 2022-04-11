@@ -390,10 +390,10 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 .radio-body{
     width: 50%;
-    height: 100vh;
+    height: 697px;
     position: absolute;
     margin-left: 50%;
-    transform: translateY(350px);
+    transform: translateY(360px);
 }
 
 
