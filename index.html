@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&family=Source+Sans+Pro:wght@200;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./estilos/normalize.css">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/style-fork2.css">
     <title>App - Equipo Terrirorial</title>
 </head>
 <body>
+    <label for="father-body"><div class="radio-body"></div></label>
+    <input type="radio" name="zonas" id="father-body" class="right-radio radio_body">
     <header>
         <div class="logo">
             <span>DM | EQUIPO TERRITORIAL</span>
@@ -54,12 +56,19 @@
             <div class="container-middle_left">
                 <h2 class="container-middle__subtitulo sub-left">Gestión territorial</h2>
                 <div class="grid-container-left">
-                    <div class="container-middle_left__tablero">
+                    <div class="container-middle_left__estado">
                         <a href="https://forms.gle/JRJ6CxJMW3gJCfYq5" target="blank">Ficha de estado</a> 
                     </div>
-                    <div class="container-middle_left__parte">
-                        <a href="https://forms.gle/eKzmXcr1kuiDtsaZ6" target="blank">Carga de eventos</a> 
-                    </div>
+                    <label for="father-eventos">
+                        <input type="checkbox" name="zonas" id="father-eventos" class="left-checkbox checkbox_eventos">
+                        <div class="old-brother old-brother_eventos">
+                            <p>Carga de eventos</p>
+                        </div>
+                        <div class="young-brother young-brother_eventos">
+                            <a href="https://forms.gle/eKzmXcr1kuiDtsaZ6" target="blank">Cargar evento</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1VAyLvFzQtAbQNMliSknwNA2swiZ4r0Kb58yyjiDTkSI/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
                     <div class="container-middle_left__deteccioness">
                         <a href="https://forms.gle/xnLMj8Cm1d2Eepj56" target="blank">Detecciones y denuncias</a> 
                     </div>
@@ -77,35 +86,91 @@
             <div class="container-middle_right">
                 <h2 class="container-middle__subtitulo sub-right">Resgistro de trabajo diario</h2>
                 <div class="grid-container-right">
-                    <div class="container-middle_right__zona1">
-                        <a href="https://forms.gle/dXjZop1xw8F28axb8" target="blank">Zona 1</a>   
-                    </div>
-                    <div class="container-middle_right__zona2">
-                        <a href="https://forms.gle/zTEpUCdans2i7Z5G7" target="blank">Zona 2</a>   
-                    </div>
-                    <div class="container-middle_right__zona3">
-                        <a href="https://forms.gle/6VYjecYXrDQofwm87" target="blank">Zona 3</a>   
-                    </div>
-                    <div class="container-middle_right__zona4">
-                        <a href="https://forms.gle/dGh6TNq8929XWY5G8" target="blank">Zona 4</a>   
-                    </div>
-                    <div class="container-middle_right__zona5">
-                        <a href="https://forms.gle/dVGVk4Xz7BPLS7sg6" target="blank">Zona 5</a>   
-                    </div>
-                    <div class="container-middle_right__zona6">
-                        <a href="https://forms.gle/oi3ayiQNMGXyyThZ7" target="blank">Zona 6</a>   
-                    </div>
-                    <div class="container-middle_right__zona7">
-                        <a href="https://forms.gle/Ctx8WHszCjpfdaTc6" target="blank">Zona 7</a>   
-                    </div>
-                    <div class="container-middle_right__interior">
-                        <a href="https://forms.gle/Hb1M35QvaF5miWmq9" target="blank">Interior</a>                  
-                    </div>
-                </div>    
+                    <label for="father-z1">
+                        <input type="radio" name="zonas" id="father-z1" class="right-radio radio_zona1">
+                        <div class="old-brother old-brother_z1">
+                            <p>Zona 1</p>
+                        </div>
+                        <div class="young-brother young-brother_z1">
+                            <a href="https://forms.gle/dXjZop1xw8F28axb8" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-z2">
+                        <input type="radio" name="zonas" id="father-z2" class="right-radio radio_zona2">
+                        <div class="old-brother old-brother_z2">
+                            <p>Zona 2</p>
+                        </div>
+                        <div class="young-brother young-brother_z2">
+                            <a href="https://forms.gle/zTEpUCdans2i7Z5G7" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-z3">
+                        <input type="radio" name="zonas" id="father-z3" class="right-radio radio_zona3">
+                        <div class="old-brother old-brother_z3">
+                            <p>Zona 3</p>
+                        </div>
+                        <div class="young-brother young-brother_z3">
+                            <a href="https://forms.gle/6VYjecYXrDQofwm87" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-z4">
+                        <input type="radio" name="zonas" id="father-z4" class="right-radio radio_zona4">
+                        <div class="old-brother old-brother_z4">
+                            <p>Zona 4</p>
+                        </div>
+                        <div class="young-brother young-brother_z4">
+                            <a href="https://forms.gle/dGh6TNq8929XWY5G8" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-z5">
+                        <input type="radio" name="zonas" id="father-z5" class="right-radio radio_zona5">
+                        <div class="old-brother old-brother_z5">
+                            <p>Zona 5</p>
+                        </div>
+                        <div class="young-brother young-brother_z5">
+                            <a href="https://forms.gle/dVGVk4Xz7BPLS7sg6" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-z6">
+                        <input type="radio" name="zonas" id="father-z6" class="right-radio radio_zona6">
+                        <div class="old-brother old-brother_z6">
+                            <p>Zona 6</p>
+                        </div>
+                        <div class="young-brother young-brother_z6">
+                            <a href="https://forms.gle/oi3ayiQNMGXyyThZ7" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-z7">
+                        <input type="radio" name="zonas" id="father-z7" class="right-radio radio_zona7">
+                        <div class="old-brother old-brother_z7">
+                            <p>Zona 7</p>
+                        </div>
+                        <div class="young-brother young-brother_z7">
+                            <a href="https://forms.gle/Ctx8WHszCjpfdaTc6" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                    <label for="father-int">
+                        <input type="radio" name="zonas" id="father-int" class="right-radio radio_int">
+                        <div class="old-brother old-brother_int">
+                            <p>Interior</p>
+                        </div>
+                        <div class="young-brother young-brother_int">
+                            <a href="https://forms.gle/Hb1M35QvaF5miWmq9" target="blank">Cargar registro</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                        </div>
+                    </label>
+                </div>
             </div>
         </section>
         <section class="doc-complementaria">
-            <input type="checkbox" name="complementaria" id="cb-comp">
+            <input type="checkbox" name="complementaria" id="cb-comp" class="checkbox-complementaria">
             <div class="doc-complementaria_titulo">
                 <label for="cb-comp">Documentación complementaria<span class="material-icons">arrow_drop_down</span></label>
             </div>
@@ -113,7 +178,9 @@
                 <a href="https://drive.google.com/drive/folders/146SEiRwRFMJKwoha9ZAeDlHcsd6JPQAx?usp=sharing" target="blank">Planes de trabajo</a>
                 <a href="https://drive.google.com/drive/folders/1Dp2o7_lJYh21Tsd1vFOKmjBB_HMwuPLF?usp=sharing" target="blank">Fichas de Cauce</a>
                 <a href="https://drive.google.com/drive/folders/1drnDAqdu9wp41DlKNDHhh6xRuN7ZpqJV?usp=sharing" target="blank">Vallas de obra</a>
-                <a href="https://drive.google.com/drive/folders/1SHPsp4zKPRTn1iMojgrnbiR8B0sNHZ7T?usp=sharing" target="blank">Informes por Municipio</a>
+                <a href="https://drive.google.com/drive/folders/1SHPsp4zKPRTn1iMojgrnbiR8B0sNHZ7T?usp=sharing" target="blank">Informes por municipio</a>
+                <a href="https://drive.google.com/drive/folders/1-atlFXZvfYCCfliGvbOXS39ypqDcQGsV?usp=sharing" target="blank">Informes de Relevamiento</a>
+                <a href="https://drive.google.com/drive/folders/1cXsYYuXQanAu0AWdGXCK4rFbL6QuoImi?usp=sharing" target="blank">Informes de actividades especiales</a>
             </div>
         </section>
     </main>
