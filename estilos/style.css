@@ -1,10 +1,10 @@
 :root{
     --primary-font: 'Oswald', sans-serif;
     --secondary-font: 'Source Sans Pro', sans-serif;
-    --primary-color: #22514c;
-    --secondary-color: #8bb2a2;
-    --tertiary-color: #d23f24;
-    --font-color: #f6cbbc;
+    --primary-color: #414642;
+    --secondary-color: #4eaaad;
+    --tertiary-color: #71b29f;
+    --font-color: #eeeeee;
 }
 
 body{
@@ -19,6 +19,9 @@ header{
     height: 48px;
     background-color: var(--primary-color);
     color: var(--font-color);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 header nav ul{
@@ -41,21 +44,6 @@ header nav ul li{
     width: 130px;
     text-align: center;
     border-right: solid 1px var(--font-color);
-}
-
-header nav ul li:hover{
-    background-color: var(--tertiary-color);
-    color: var(--font-color);
-
-}
-
-header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.nav-list_rtd__items{
-    display: block;
-}
-
-.nav-list_supervision__items li:hover > a, .nav-list_rtd__items li:hover > a {
-
-    color: var(--font-color);
 }
 
 .logo{
@@ -83,10 +71,24 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 .nav-list_supervision__items > li, .nav-list_rtd__items > li{
     border-bottom: solid 1px var(--primary-color);
+    border-right: none;
     text-align: center;
     background-color: var(--secondary-color);
     width: 130px;
     transform: translateY(-20px);
+}
+
+header nav ul li:hover{
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+}
+
+header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.nav-list_rtd__items{
+    display: block;
+}
+
+.nav-list_supervision__items li:hover > a, .nav-list_rtd__items li:hover > a {
+    color: var(--font-color);
 }
 
 
@@ -124,7 +126,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     width: 80%;
     max-width: 960px;
     margin: 36px auto;
-    height: 480px;
+    height: 556px;
     text-align: center;
 }
 
@@ -135,6 +137,8 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     border-radius: 4px;
     padding: 4px;
     height: 80%;
+    min-width: 360px;
+    height: 480px;
 }
 
 .grid-container-left{
@@ -145,7 +149,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     margin-left: 8px;
 }
 
-.container-middle__subtitulo {
+.container-middle__subtitulo{
     font-family: var(--primary-font);
     font-size: 1.2rem;
     font-weight: 400s;
@@ -163,26 +167,42 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     margin-left: 8px;
 }
 
-.grid-container-left div, .grid-container-right div{
+.grid-container-left > div, .grid-container-left > label{
     background-color: var(--primary-color);
     margin: 4px;
     border-radius: 3px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 12px;
-    font-weight: 500;
-    color: var(--font-color);
-    transition: all .3s ease;
+    height: 150px;
 }
 
-.grid-container-left div:hover, .grid-container-right div:hover{
+.grid-container-left .old-brother_eventos{
+    display: block;
+    height: 128px;
+    width: 100%;
+}
+
+.grid-container-left .old-brother_eventos p{
+    text-align: center;
+    line-height: 96px;
+}
+
+.grid-container-left .young-brother_eventos a{
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 36px;
+    width: 100%;
+}
+
+.grid-container-left > div:hover, .grid-container-left > label:hover, .grid-container-right > div:hover{
     background-color: var(--tertiary-color);
     cursor: pointer;
 }
 
-section div div a, section div div p{
+.container-middle_left a{
     text-decoration: none;
     text-align: center;
     font-family: var(--primary-font);
@@ -191,18 +211,199 @@ section div div a, section div div p{
     width: 100%;
 }
 
+.container-middle_left__relevamientos, .container-middle_left__actividades{
+    padding: 0 12px;
+}
 
-.grid-container-left .container-middle_left__parte .menu-ps, .grid-container-left .container-middle_left__dym .menu-dym{
+
+/*registro de trabajo diario*/
+
+.old-brother{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    z-index: 10;
+    position: relative;
+    line-height: 48px;
+    padding: 12px;
+    min-width: 176px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+.old-brother:hover{
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.young-brother{
+    height: 100px;
+    background-color: var(--font-color);
+    transition: transform 750ms ease 100ms;
+    position: absolute;
+    margin: 0 16px;
+    padding-top: 12px;
+    width: 15%;
+    min-width: 182px;
+    max-width: 196px;
+    height: 96px;
+    border-radius: 0 0 3px 3px;
+}
+
+.container-middle_right p, .container-middle_left p{
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--font-color);   
+    width: 100%;
+}
+
+.container-middle_right a{
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 36px;
+    width: 100%;
+}
+
+/*z-index*/
+
+.old-brother_z1, .old-brother_z2{
+    z-index: 8;
+}
+
+.young-brother_z1, .young-brother_z2{
+    z-index: 7;
+}
+
+.old-brother_z3, .old-brother_z4{
+    z-index: 6;
+}
+
+.young-brother_z3, .young-brother_z4{
+    z-index: 5;
+}
+
+.old-brother_z5, .old-brother_z6{
+    z-index: 4;
+}
+
+.young-brother_z5, .young-brother_z6{
+    z-index: 3;
+}
+
+.old-brother_z7, .old-brother_int, .old-brother_eventos{
+    z-index: 2;
+}
+
+.young-brother_z7, .young-brother_int, .young-brother_eventos{
+    z-index: 1;
+}
+
+.young-brother_eventos a:hover, .container-middle_right a:hover{
+    color: var(--tertiary-color);
+}
+
+
+/*radio*/
+
+.right-radio, .left-checkbox{
     display: none;
+}
+
+.radio_zona1:not(checked) ~ .young-brother_z1{
+    transform: translateY(-112px);
+}
+
+.radio_zona1:checked ~ .young-brother_z1{
+    transform: translateY(-4px);
+}
+
+.radio_zona2:not(checked) ~ .young-brother_z2{
+    transform: translateY(-112px);
+}
+
+.radio_zona2:checked ~ .young-brother_z2{
+    transform: translateY(-4px);
+}
+
+.radio_zona3:not(checked) ~ .young-brother_z3{
+    transform: translateY(-112px);
+}
+
+.radio_zona3:checked ~ .young-brother_z3{
+    transform: translateY(-4px);
+}
+
+.radio_zona4:not(checked) ~ .young-brother_z4{
+    transform: translateY(-112px);
+}
+
+.radio_zona4:checked ~ .young-brother_z4{
+    transform: translateY(-4px);
+}
+
+.radio_zona5:not(checked) ~ .young-brother_z5{
+    transform: translateY(-112px);
+}
+
+.radio_zona5:checked ~ .young-brother_z5{
+    transform: translateY(-4px);
+}
+
+.radio_zona6:not(checked) ~ .young-brother_z6{
+    transform: translateY(-112px);
+}
+
+.radio_zona6:checked ~ .young-brother_z6{
+    transform: translateY(-4px);
+}
+
+.radio_zona7:not(checked) ~ .young-brother_z7{
+    transform: translateY(-112px);
+}
+
+.radio_zona7:checked ~ .young-brother_z7{
+    transform: translateY(-4px);
+}
+
+.radio_int:not(checked) ~ .young-brother_int{
+    transform: translateY(-112px);
+}
+
+.radio_int:checked ~ .young-brother_int{
+    transform: translateY(-4px);
+}
+
+.checkbox_eventos:not(checked) ~ .young-brother_eventos{
+    transform: translateY(10px);
+}
+
+.checkbox_eventos:checked ~ .young-brother_eventos{
+    transform: translateY(128px);
+}
+
+.radio-body{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateY(350px);
 }
 
 
 /*Documentacion complementaria*/
 
 .doc-complementaria{
-    margin: 0 auto 48px;
+    margin: 104px auto 48px auto;
     width: 80%;
     max-width: 960px;
+    min-width: 848px;
     display: block;
     background-color: var(--font-color);
     border-radius: 4px;
@@ -221,13 +422,14 @@ section div div a, section div div p{
     font-weight: 400;
     font-size: 1.5rem;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .doc-complementaria_contenido, #cb-comp{
     display: none;
 }
 
-input[type="checkbox"]:checked ~ .doc-complementaria_contenido{
+.checkbox-complementaria:checked ~ .doc-complementaria_contenido{
     display: block;
     padding: 12px 24px 36px 24px;
 }
