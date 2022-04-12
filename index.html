@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&family=Source+Sans+Pro:wght@200;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./estilos/normalize.css">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/style-fork.css">
+    <link rel="stylesheet" href="./estilos/media-fork.css">
     <title>App - Equipo Terrirorial</title>
 </head>
 <body>
@@ -17,9 +17,41 @@
     <input type="radio" name="zonas" id="father-body" class="right-radio radio_body">
     <header>
         <div class="logo">
-            <span>DM | EQUIPO TERRITORIAL</span>
+            <span class="media-phone">DM</span>
+            <span class="media-desktop">DM | EQUIPO TERRITORIAL</span>
         </div>
-        <nav class="nav">
+        <div class="nav-phone">
+            <label for="nav_menu">
+                <span class="material-icons media-phone nav-menu">menu</span>
+            </label>
+            <input type="radio" name="zonas" id="nav_menu">
+            <ul class="nav-phone_list">
+                <li class="nav-phone_inicio">Formularios</li>
+                <li class="nav-phone_supervision">Territorio
+                    <ul class="nav-phone_supervision__items">
+                        <li><a href="https://forms.gle/JRJ6CxJMW3gJCfYq5" target="blank">Ficha de estado</a></li>
+                        <li><a href="https://forms.gle/eKzmXcr1kuiDtsaZ6" target="blank">Carga de eventos</a></li>
+                        <li><a href="https://forms.gle/xnLMj8Cm1d2Eepj56" target="blank">Detecciones - denuncias</a></li>
+                        <li><a download="minuta-de-reunion" href="./asset/minuta-plantilla.docx" target="blank">Minuta de reunión</a></li>
+                        <li><a href="https://forms.gle/BoH8jYLSR9aZFTWv7" target="blank">Relevamiento de cauces</a></li>
+                        <li><a href="https://forms.gle/XitRoVXbecsJt1nx5" target="blank">Actividades especiales</a></li>
+                    </ul>
+                </li>
+                <li class="nav-phone_rtd">Trabajo diario
+                    <ul class="nav-phone_rtd__items">
+                        <li><a href="https://forms.gle/dXjZop1xw8F28axb8" target="blank">Zona 1</a></li>
+                        <li><a href="https://forms.gle/zTEpUCdans2i7Z5G7" target="blank">Zona 2</a></li>
+                        <li><a href="https://forms.gle/6VYjecYXrDQofwm87" target="blank">Zona 3</a></li>
+                        <li><a href="https://forms.gle/dGh6TNq8929XWY5G8" target="blank">Zona 4</a></li>
+                        <li><a href="https://forms.gle/dVGVk4Xz7BPLS7sg6" target="blank">Zona 5</a></li>
+                        <li><a href="https://forms.gle/oi3ayiQNMGXyyThZ7" target="blank">Zona 6</a></li>
+                        <li><a href="https://forms.gle/Ctx8WHszCjpfdaTc6" target="blank">Zona 7</a></li>
+                        <li><a href="https://forms.gle/Hb1M35QvaF5miWmq9" target="blank">Interior</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <nav class="nav media-desktop">
             <ul class="nav-list">
                 <li class="nav-list_inicio">Inicio</li>
                 <li class="nav-list_supervision">Territorio
@@ -103,7 +135,7 @@
                         </div>
                         <div class="young-brother young-brother_z2">
                             <a href="https://forms.gle/zTEpUCdans2i7Z5G7" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1stv3DtL1EB98aCL0CxgwBMRiJwQR2f4ywvY3QlXpH5w/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                     <label for="father-z3">
@@ -113,7 +145,7 @@
                         </div>
                         <div class="young-brother young-brother_z3">
                             <a href="https://forms.gle/6VYjecYXrDQofwm87" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1FY-5V6CIeTPqliqE5XbPte5otU2IzfkU1TuVYOV_FzQ/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                     <label for="father-z4">
@@ -123,7 +155,7 @@
                         </div>
                         <div class="young-brother young-brother_z4">
                             <a href="https://forms.gle/dGh6TNq8929XWY5G8" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1PVEWBb51upKhAcx9NfMIhA72SCtxGEm44kSbTWTNiWY/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                     <label for="father-z5">
@@ -133,7 +165,7 @@
                         </div>
                         <div class="young-brother young-brother_z5">
                             <a href="https://forms.gle/dVGVk4Xz7BPLS7sg6" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1K9F3FGHXkGIz6xtOzJb4ZiAfdhJG2FUvHhpnUBBpelc/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                     <label for="father-z6">
@@ -143,7 +175,7 @@
                         </div>
                         <div class="young-brother young-brother_z6">
                             <a href="https://forms.gle/oi3ayiQNMGXyyThZ7" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1Wx-6Gu3AhxCX-H42aKc4dKiVmPOUq0DnVj-iVGjkxrI/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                     <label for="father-z7">
@@ -153,7 +185,7 @@
                         </div>
                         <div class="young-brother young-brother_z7">
                             <a href="https://forms.gle/Ctx8WHszCjpfdaTc6" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1LA8YkpMm4Mq48FcePaqMefx_IxbVMjt6zKrQPUt2AS8/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                     <label for="father-int">
@@ -163,7 +195,7 @@
                         </div>
                         <div class="young-brother young-brother_int">
                             <a href="https://forms.gle/Hb1M35QvaF5miWmq9" target="blank">Cargar registro</a>
-                            <a href="https://docs.google.com/spreadsheets/d/1sXS5geVxX8tnsFd3HTNjyzg2PQOdt5OKEuhg9u0qC_E/edit?usp=sharing" target="blank">Generar informe</a>
+                            <a href="https://docs.google.com/spreadsheets/d/1oXQJ4-uj-oWMgi8uGOeBbNa9nDjuOKaJCMvdzS9_G4k/edit?usp=sharing" target="blank">Generar informe</a>
                         </div>
                     </label>
                 </div>
@@ -185,7 +217,8 @@
         </section>
     </main>
     <footer>
-        <p>DIRECCIÓN DE MANTENIMIENTO | DIRECCIÓN PROVINCIAL DE HIDRÁULICA | SUBSECRETARÍA DE RECURSOS HÍDRICOS</p>
+        <p class="media-desktop">DIRECCIÓN DE MANTENIMIENTO | DIRECCIÓN PROVINCIAL DE HIDRÁULICA | SUBSECRETARÍA DE RECURSOS HÍDRICOS</p>
+        <p class="media-phone">DM | DPH | SRH</p>
         <div class="logo-provincia"></div>
     </footer>
 </body>
