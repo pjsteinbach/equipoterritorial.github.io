@@ -19,6 +19,7 @@
     }
 
     .nav-phone{
+        display: block;
         position: relative;
         transition: all 750ms ease 100ms;
     }
@@ -147,7 +148,7 @@
 
     .radio-body{
         width: 100%;
-        height: 235vh;
+        height: 200vh;
         position: absolute;
         margin-left: 0;
         transform: translateY(350px);
