@@ -1,0 +1,164 @@
+@media screen and (max-width: 720px){
+
+    .media-phone{
+        display: inline;
+    }
+
+    .media-desktop{
+        display: none;
+    }
+
+    body{
+        min-width: 420px;
+    }
+
+    main{
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-phone{
+        position: relative;
+        transition: all 750ms ease 100ms;
+    }
+
+    #nav_menu{
+        display: none;
+    }
+
+    #nav_menu:checked + .nav-phone_list{
+        display: block;
+        transform: translate(-172px, -4px);
+    }
+
+    #nav_menu:not(checked) + .nav-phone_list{
+        display: none;
+        transform: translate(0px, -4px);
+    }
+    
+    .nav-phone_list{
+        width: 200px;
+        position: absolute;
+        font-family: var(--secondary-font);
+        font-size: .8rem;
+        background-color: var(--primary-color);
+        color: var(--font-color);
+        padding: 4px;
+        transition: transform 750ms ease 100ms;
+    }
+
+    .nav-phone_list > li{
+        list-style: none;
+        border-bottom: 1px solid var(--tertiary-color);
+        padding: 12px;
+    }
+
+    .nav-phone_list > li > ul{
+        padding-bottom: 0px;
+        padding-top: 4px;
+    }
+
+    .nav-phone_list > li > ul > li > a{
+        text-decoration: none;
+        list-style: none;
+        border-bottom: none;
+        width: 100%;
+        line-height: 2rem;
+        color: var(--font-color);
+    }
+    
+    .nav-list{
+        display: none;
+    }
+    
+    .nav-menu{
+        margin-right: 12px;
+        padding-right: 0;
+        display: block;
+    }
+
+    .logo{
+        padding-left: 12px;
+        font-family: var(--primary-font);
+        font-size: 1.2rem;
+    }
+
+    header{
+        position: static;
+        min-width: 320px;
+    }
+
+  
+    /*main*/
+    
+    .container-upper{
+        background-image: url(../asset/img/fondo5.jpg);
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container-upper h1{
+        font-size: 3rem;
+        padding-top: 148px;
+    }
+    
+    .container-upper p{
+        font-size: .7rem;
+        padding: 4px 0;
+        line-height: 1rem;
+    }
+    
+    .container-middle{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        margin-left: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+    
+    .sub-right, .sub-left{
+        margin-left: 0;
+        margin-top: 48px;
+        width: 100%;
+    }
+
+    .grid-container-left, .grid-container-right{
+        width: 97%;
+        margin-left: 0;
+    }
+
+    .grid-container-left > div, .grid-container-left > label{
+        margin-left: 0;
+    }
+
+    .container-middle_right{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .young-brother{
+        margin: 0 8px;
+        width: 170px;
+        min-width: 140px;
+    }
+
+    .radio-body{
+        width: 100%;
+        height: 235vh;
+        position: absolute;
+        margin-left: 0;
+        transform: translateY(350px);
+    }
+
+    /*Documentacion complementaria*/
+    
+    .doc-complementaria{
+        margin-bottom: 24px;
+        width: 100%;
+        min-width: 0;
+    }
+    
+}
