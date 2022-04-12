@@ -7,7 +7,7 @@
     --font-color: #eeeeee;
 }
 
-.media-phone{
+.media-phone, .nav-phone{
     display: none;
 }
 
@@ -104,7 +104,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 /*main*/
 
 .container-upper{
-    background-image: url(../asset/img/fondo6.jpg);
+    background-image: url(../asset/img/fondo5.jpg);
     background-size: cover;
     text-align: center;
     height: 360px;
