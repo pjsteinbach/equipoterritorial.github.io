@@ -7,8 +7,17 @@
     --font-color: #eeeeee;
 }
 
+.media-phone{
+    display: none;
+}
+
+.media-desktop{
+    display: inline;
+}
+
 body{
     background-color: var(--secondary-color);
+    margin: 0;
 }
 
 header{
@@ -137,7 +146,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     border-radius: 4px;
     padding: 4px;
     height: 80%;
-    min-width: 360px;
+    min-width: 320px;
     height: 480px;
 }
 
@@ -174,6 +183,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     display: flex;
     align-items: center;
     height: 150px;
+    min-width: 150px;
 }
 
 .grid-container-left .old-brother_eventos{
@@ -225,7 +235,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     position: relative;
     line-height: 48px;
     padding: 12px;
-    min-width: 176px;
+    min-width: 150px;
     height: 86px;
     display: flex;
     align-items: center;
@@ -239,14 +249,13 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 }
 
 .young-brother{
-    height: 100px;
     background-color: var(--font-color);
     transition: transform 750ms ease 100ms;
     position: absolute;
     margin: 0 16px;
     padding-top: 12px;
     width: 15%;
-    min-width: 182px;
+    min-width: 140px;
     max-width: 196px;
     height: 96px;
     border-radius: 0 0 3px 3px;
@@ -390,10 +399,10 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 .radio-body{
     width: 50%;
-    height: 697px;
+    height: 100vh;
     position: absolute;
     margin-left: 50%;
-    transform: translateY(360px);
+    transform: translateY(350px);
 }
 
 
@@ -403,7 +412,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     margin: 104px auto 48px auto;
     width: 80%;
     max-width: 960px;
-    min-width: 848px;
+    min-width: 320px;
     display: block;
     background-color: var(--font-color);
     border-radius: 4px;
