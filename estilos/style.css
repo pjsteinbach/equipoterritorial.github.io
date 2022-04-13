@@ -111,7 +111,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 }
 
 .container-upper h1{
-    margin: 0;
+    margin: 0 auto;
     padding-top: 100px;
     font-family: var(--primary-font);
     font-size: 4.7rem;
@@ -132,30 +132,29 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 .container-middle{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 80%;
-    max-width: 960px;
+    grid-template-rows: 1fr 1fr;
+    width: 960px;
     margin: 36px auto;
     height: 556px;
     text-align: center;
 }
 
-.grid-container-left, .grid-container-right{
+.container-middle_left, .container-middle_right{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: solid 2px var(--font-color);
     border-radius: 4px;
     padding: 4px;
-    height: 80%;
-    min-width: 320px;
+    width: 460px;
     height: 480px;
 }
 
-.grid-container-left{
-    margin-right: 8px;
+.container-middle_left{
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.grid-container-right{
-    margin-left: 8px;
+.container-middle_right{
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .container-middle__subtitulo{
@@ -170,34 +169,34 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 .sub-left{
     margin-right: 8px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .sub-right{
-    margin-left: 8px;
+    margin-right: 8px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
-.grid-container-left > div, .grid-container-left > label{
+.container-middle_left > div, .container-middle_right > div{
     background-color: var(--primary-color);
     margin: 4px;
     border-radius: 3px;
     display: flex;
     align-items: center;
-    height: 150px;
-    min-width: 150px;
 }
 
-.grid-container-left .old-brother_eventos{
+.container-middle_left .old-brother_eventos{
     display: block;
-    height: 128px;
-    width: 100%;
+    height: 126px;
 }
 
-.grid-container-left .old-brother_eventos p{
-    text-align: center;
+.container-middle_left .old-brother_eventos p{
     line-height: 96px;
 }
 
-.grid-container-left .young-brother_eventos a{
+.container-middle_left .young-brother_eventos a{
     text-decoration: none;
     font-family: var(--secondary-font);
     font-size: .8rem;
@@ -207,7 +206,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     width: 100%;
 }
 
-.grid-container-left > div:hover, .grid-container-left > label:hover, .grid-container-right > div:hover{
+.container-middle_left > div:hover, .container-middle_right > div:hover{
     background-color: var(--tertiary-color);
     cursor: pointer;
 }
@@ -232,15 +231,12 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     background-color: var(--primary-color);
     color: var(--font-color);
     z-index: 10;
-    position: relative;
-    line-height: 48px;
-    padding: 12px;
-    min-width: 150px;
-    height: 86px;
+    height: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin: 4px;
     border-radius: 3px;
+    position: relative
 }
 
 .old-brother:hover{
@@ -250,19 +246,16 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 .young-brother{
     background-color: var(--font-color);
-    transition: transform 750ms ease 100ms;
-    position: absolute;
-    margin: 0 16px;
-    padding-top: 12px;
-    width: 15%;
-    min-width: 140px;
-    max-width: 196px;
-    height: 96px;
+    transition: transform 750ms ease 300ms;
+    padding-top: 4px;
+    transform: translate(12px, 6px);
+    width: 200px;
+    height: 84px;
     border-radius: 0 0 3px 3px;
+    position: absolute;
 }
 
 .container-middle_right p, .container-middle_left p{
-    text-decoration: none;
     text-align: center;
     font-family: var(--primary-font);
     font-size: 1rem;
@@ -279,6 +272,29 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     line-height: 36px;
     width: 100%;
 }
+
+
+/*hover father*/
+
+.father-z1:hover .young-brother_z1,
+.father-z2:hover .young-brother_z2,
+.father-z3:hover .young-brother_z3,
+.father-z4:hover .young-brother_z4,
+.father-z5:hover .young-brother_z5,
+.father-z6:hover .young-brother_z6,
+.father-z7:hover .young-brother_z7,
+.father-int:hover .young-brother_int{
+    transform: translate(11px, 92px);
+}
+
+.father-eventos:hover .young-brother_eventos{
+    transform: translate(11px, 106px);
+}
+
+.young-brother_eventos a:hover, .container-middle_right a:hover{
+    color: var(--tertiary-color);
+}
+
 
 /*z-index*/
 
@@ -312,97 +328,6 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 .young-brother_z7, .young-brother_int, .young-brother_eventos{
     z-index: 1;
-}
-
-.young-brother_eventos a:hover, .container-middle_right a:hover{
-    color: var(--tertiary-color);
-}
-
-
-/*radio*/
-
-.right-radio, .left-checkbox{
-    display: none;
-}
-
-.radio_zona1:not(checked) ~ .young-brother_z1{
-    transform: translateY(-112px);
-}
-
-.radio_zona1:checked ~ .young-brother_z1{
-    transform: translateY(-4px);
-}
-
-.radio_zona2:not(checked) ~ .young-brother_z2{
-    transform: translateY(-112px);
-}
-
-.radio_zona2:checked ~ .young-brother_z2{
-    transform: translateY(-4px);
-}
-
-.radio_zona3:not(checked) ~ .young-brother_z3{
-    transform: translateY(-112px);
-}
-
-.radio_zona3:checked ~ .young-brother_z3{
-    transform: translateY(-4px);
-}
-
-.radio_zona4:not(checked) ~ .young-brother_z4{
-    transform: translateY(-112px);
-}
-
-.radio_zona4:checked ~ .young-brother_z4{
-    transform: translateY(-4px);
-}
-
-.radio_zona5:not(checked) ~ .young-brother_z5{
-    transform: translateY(-112px);
-}
-
-.radio_zona5:checked ~ .young-brother_z5{
-    transform: translateY(-4px);
-}
-
-.radio_zona6:not(checked) ~ .young-brother_z6{
-    transform: translateY(-112px);
-}
-
-.radio_zona6:checked ~ .young-brother_z6{
-    transform: translateY(-4px);
-}
-
-.radio_zona7:not(checked) ~ .young-brother_z7{
-    transform: translateY(-112px);
-}
-
-.radio_zona7:checked ~ .young-brother_z7{
-    transform: translateY(-4px);
-}
-
-.radio_int:not(checked) ~ .young-brother_int{
-    transform: translateY(-112px);
-}
-
-.radio_int:checked ~ .young-brother_int{
-    transform: translateY(-4px);
-}
-
-.checkbox_eventos:not(checked) ~ .young-brother_eventos{
-    transform: translateY(10px);
-}
-
-.checkbox_eventos:checked ~ .young-brother_eventos{
-    transform: translateY(128px);
-}
-
-.radio-body{
-    width: 50%;
-    height: 100vh;
-    position: absolute;
-    margin-left: 50%;
-    transform: translateY(350px);
 }
 
 
