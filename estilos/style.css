@@ -104,7 +104,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 /*main*/
 
 .container-upper{
-    background-image: url(../asset/img/fondo5.jpg);
+    background-image: url(../asset/img/DSC06476-min.JPG);
     background-size: cover;
     text-align: center;
     height: 360px;
@@ -333,25 +333,32 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 /*Documentacion complementaria*/
 
-.doc-complementaria{
-    margin: 104px auto 48px auto;
+.doc-complementaria, .links-interes{
     width: 80%;
     max-width: 960px;
     min-width: 320px;
     display: block;
-    background-color: var(--font-color);
-    border-radius: 4px;
+
 }
 
-.doc-complementaria_titulo{
+.doc-complementaria{
+    margin: 72px auto 24px auto;
+}
+
+.links-interes{
+    margin: 24px auto 48px auto;
+}
+
+.doc-complementaria_titulo, .links-interes_titulo{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px 0;
+    border-bottom: 2px solid var(--font-color);
 }
 
-.doc-complementaria_titulo label{
+.doc-complementaria_titulo label, .links-interes_titulo label{
     font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 1.5rem;
@@ -359,16 +366,12 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     cursor: pointer;
 }
 
-.doc-complementaria_contenido, #cb-comp{
+.doc-complementaria_contenido, .links-interes_contenido, #cb-comp, #cb-links{
     display: none;
 }
 
-.checkbox-complementaria:checked ~ .doc-complementaria_contenido{
-    display: block;
-    padding: 12px 24px 36px 24px;
-}
 
-.doc-complementaria_contenido a{
+.doc-complementaria_contenido a, .links-interes_contenido a{
     display: block;
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -376,12 +379,22 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     color: var(--primary-color);
     text-decoration: none;
     line-height: 36px;
-    border-bottom: 1px solid var(--secondary-color);
     cursor: pointer;
+    border-bottom: 1px dotted var(--font-color);
 }
 
-.doc-complementaria_contenido a:hover{
-    color: var(--tertiary-color);
+.doc-complementaria_contenido a:hover, .links-interes_contenido a:hover{
+    color: var(--font-color);
+}
+
+.checkbox-complementaria:checked ~ .doc-complementaria_contenido{
+    display: block;
+    padding: 12px 24px 36px 24px;
+}
+
+.checkbox-links:checked ~ .links-interes_contenido{
+    display: block;
+    padding: 12px 24px 36px 24px;
 }
 
 
