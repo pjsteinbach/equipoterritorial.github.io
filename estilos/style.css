@@ -333,7 +333,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
 
 /*Documentacion complementaria*/
 
-.doc-complementaria, .links-interes{
+.doc-complementaria{
     width: 80%;
     max-width: 960px;
     min-width: 320px;
@@ -345,11 +345,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     margin: 72px auto 24px auto;
 }
 
-.links-interes{
-    margin: 24px auto 48px auto;
-}
-
-.doc-complementaria_titulo, .links-interes_titulo{
+.doc-complementaria_titulo{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -358,7 +354,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     border-bottom: 2px solid var(--font-color);
 }
 
-.doc-complementaria_titulo label, .links-interes_titulo label{
+.doc-complementaria_titulo label{
     font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 1.5rem;
@@ -366,12 +362,12 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     cursor: pointer;
 }
 
-.doc-complementaria_contenido, .links-interes_contenido, #cb-comp, #cb-links{
+.doc-complementaria_contenido, #cb-comp, #cb-link{
     display: none;
 }
 
 
-.doc-complementaria_contenido a, .links-interes_contenido a{
+.doc-complementaria_contenido a{
     display: block;
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -383,7 +379,7 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     border-bottom: 1px dotted var(--font-color);
 }
 
-.doc-complementaria_contenido a:hover, .links-interes_contenido a:hover{
+.doc-complementaria_contenido a:hover{
     color: var(--font-color);
 }
 
@@ -392,10 +388,6 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     padding: 12px 24px 36px 24px;
 }
 
-.checkbox-links:checked ~ .links-interes_contenido{
-    display: block;
-    padding: 12px 24px 36px 24px;
-}
 
 
 /*footer*/
