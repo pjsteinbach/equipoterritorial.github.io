@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&family=Source+Sans+Pro:wght@200;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="stylesheet" href="./estilos/media.css">
+    <link rel="stylesheet" href="./estilos/styleFork.css">
+    <link rel="stylesheet" href="./estilos/mediaFork.css">
     <title>App - Equipo Terrirorial</title>
 </head>
 <body>
@@ -85,8 +85,14 @@
         <section class="container-middle">
             <h2 class="container-middle__subtitulo sub-left">Gestión territorial</h2>
             <div class="container-middle_left">
-                <div class="container-middle_left__estado">
-                    <a href="https://forms.gle/JRJ6CxJMW3gJCfYq5" target="blank">Ficha de estado</a> 
+                <div class="father-eventos">
+                    <div class="young-brother young-brother_eventos">
+                        <a href="https://forms.gle/JRJ6CxJMW3gJCfYq5" target="blank">Cargar estado</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1PyIhwVpLjKLbCieH7PfsTzFIpujSxVnXliGmkVd1o-k/edit?usp=sharing" target="blank">Generar minuta</a>
+                    </div>
+                    <div class="old-brother old-brother_eventos">
+                        <p>Ficha de estado</p>
+                    </div>
                 </div>
                 <div class="father-eventos">
                     <div class="young-brother young-brother_eventos">
@@ -203,12 +209,12 @@
             </div>
         </section>
 
-        <section class="links-interes">
-            <input type="checkbox" name="links" id="cb-links" class="checkbox-links">
-            <div class="links-interes_titulo">
-                <label for="cb-links">Links de interés<span class="material-icons">arrow_drop_down</span></label>
+        <section class="doc-complementaria">
+            <input type="checkbox" name="complementaria" id="cb-link" class="checkbox-complementaria">
+            <div class="doc-complementaria_titulo">
+                <label for="cb-link">Links de interés<span class="material-icons">arrow_drop_down</span></label>
             </div>
-            <div class="links-interes_contenido">
+            <div class="doc-complementaria_contenido">
                 <a href="https://cas.gdeba.gba.gob.ar/acceso/login/" target="blank">GDEBA</a>
                 <a href="https://www.gba.gob.ar/hidraulica/accion_cooperativa" target="blank">Web oficial del Ministerio: SRH | DPH | DM</a>
                 <a href="https://www.instagram.com/guille_jelinski/" target="blank">Instagram de Guillermo Jelinsky</a>
@@ -216,6 +222,7 @@
                 <a href="https://docs.google.com/spreadsheets/d/1nWlz1x2hkONfmfhZmDaH146M73slP_wSC8sSSc0Zz9Y/edit?usp=sharing" target="blank">Buscador de convenios</a>
             </div>
         </section>
+
     </main>
     <footer>
         <p class="media-desktop">DIRECCIÓN DE MANTENIMIENTO | DIRECCIÓN PROVINCIAL DE HIDRÁULICA | SUBSECRETARÍA DE RECURSOS HÍDRICOS</p>
