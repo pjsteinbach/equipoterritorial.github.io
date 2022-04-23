@@ -338,6 +338,8 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     max-width: 960px;
     min-width: 320px;
     display: block;
+    border: 2px solid var(--font-color);
+    border-radius: 4px;
 
 }
 
@@ -351,7 +353,6 @@ header nav ul li:hover > .nav-list_supervision__items, header nav ul li:hover >.
     justify-content: center;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 2px solid var(--font-color);
 }
 
 .doc-complementaria_titulo label{
